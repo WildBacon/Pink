@@ -1,0 +1,5 @@
+
+.newFile.txt.swp
+*.config
+.gitingnore
+design/
