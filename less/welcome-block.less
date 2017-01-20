@@ -1,10 +1,82 @@
 .welcome-block {
+  background: url('../img/background-fullsize.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 220px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 120px;
   
   &__hand {
-    
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    margin: auto;
+    height: 645px;
   }
 }
 
 .application {
   width: 300px;
+  
+  &__title {
+    font-size: 50px;
+    line-height: 66px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  &__download {
+    display: block;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #fff;
+    border: 3px #fff solid;
+    padding: 14px 0;
+    margin-bottom: 65px;
+    text-align: center;
+    border-radius: 100px;
+  }
+  
+  &__systems {
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  
+  &__system {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 19px;
+    
+    &_ios {
+      background: url(../img/apple-logo.svg) no-repeat;
+      height: 57px;
+      width: 47px;
+    }
+    
+    &_android {
+      background: url(../img/android-logo.svg) no-repeat;
+      height: 48px;     
+      width: 43px;
+    }
+    
+    &_win {
+      background: url(../img/microsoft-logo.svg) no-repeat;
+      height: 44px;
+      width: 44px;
+    }
+  }
+  
+  &__info {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+
 }
