@@ -1,0 +1,25 @@
+.pricelist {
+  .wrapper;
+  display: table;
+  border-collapse: collapse;
+  
+  &__row {
+    display: table-row;
+  }
+  
+  &__cell {
+    display: table-cell;
+    border: 1px #e5e5e5 solid;
+    padding: 15px 0;
+    width: 25%;
+    
+    &_empty {
+      border: none;
+    }
+    
+    &_rowheader {
+      padding: 15px 24px;
+      color: @dark-blue;
+    }
+  }
+}

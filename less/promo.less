@@ -1,6 +1,7 @@
 .promo {
   padding-top: 70px;
   background: #f2f2f2;
+  position: relative;
   
   &__title {
     .wrapper;
@@ -10,7 +11,21 @@
     font-weight: 300;
     width: 780px;
     color: @dark-blue;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  &::before {
+    content: '';
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: -120px;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+    transform: skewY(-4deg);
   }
 }
 
@@ -19,6 +34,8 @@
   display: flex;
   justify-content: space-around;
   width: 940px;
+  position: relative;
+  z-index: 3;
   
   &__item {
     width: 33.33%;
@@ -77,20 +94,4 @@
   }
 }
 
-.feedback {
-  .wrapper;
-}
 
-.pricelist {
-  .wrapper;
-  display: table;
-  border: 1px black solid;
-  
-  &__row {
-    display: table-row;
-  }
-  
-  &__cell {
-    display: table-cell;
-  }
-}
