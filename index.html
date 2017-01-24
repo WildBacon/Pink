@@ -11,8 +11,8 @@
   
   <header class="page-header">
     <div class="page-header__container">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/Pink-logo-3@1x.png" width="146" alt="Pink">
+      <a class="page-header__logo" href="index.html"><picture>
+        <img src="img/Pink-logo-3@1x.png" srcset="img/Pink-logo-3@2x.png 2x" width="146" alt="Pink"></picture>
       </a>
       <ul class="page-header__list">
         <li><a href="#" class="page-header__item">Информация</a></li>
@@ -27,7 +27,7 @@
     <div class="wrapper">
       <div class="application">
         <h3 class="application__title">Взгляните на жизнь иначе!</h3>
-        <a href="" class="application__download">Скачать приложение</a>
+        <a href="#" class="application__download">Скачать приложение</a>
         <div class="application__systems">
           <div class="application__system application__system_ios">ios
           </div>
@@ -37,7 +37,7 @@
         <p class="application__info">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
       </div>
       <div class="welcome-block__hand">
-      <img src="img/iphone-hand-3@1x.png" alt="hand">
+      <img src="img/iphone-hand-3@1x.png" srcset="img/iphone-hand-3@2x.png 2x" alt="hand">
       </div>
     </div>
   </section>
@@ -49,17 +49,17 @@
     
     <div class="demonstration">
       <div class="demonstration__item">
-        <div class="demonstration__display"><img src="img/iphone-screen-3-1@1x.png" alt=""></div>
+        <div class="demonstration__display"><img src="img/iphone-screen-3-1@1x.png" srcset="img/iphone-screen-3-1@2x.png 2x" alt=""></div>
         <h4 class="demonstration__title">Поднимает настроение</h4>
         <p class="demonstration__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       </div>
       <div class="demonstration__item">
-        <div class="demonstration__display"><img src="img/iphone-screen-3-2@1x.png" alt=""></div>
+        <div class="demonstration__display"><img src="img/iphone-screen-3-2@1x.png" srcset="img/iphone-screen-3-2@2x.png 2x" alt=""></div>
         <h4 class="demonstration__title">Меняет мир вокруг</h4>
         <p class="demonstration__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </div>
       <div class="demonstration__item">
-        <div class="demonstration__display"><img src="img/iphone-screen-3-3@1x.png" alt=""></div>
+        <div class="demonstration__display"><img src="img/iphone-screen-3-3@1x.png" srcset="img/iphone-screen-3-3@2x.png 2x" alt=""></div>
         <h4 class="demonstration__title">Заводит новых друзей</h4>
         <p class="demonstration__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
@@ -84,37 +84,55 @@
   </article>
   
   <div class="pricelist">
-    <div class="pricelist__row">
-      <div class="pricelist__cell pricelist__cell_empty"></div>
-      <div class="pricelist__cell">База 1,99 USD</div>
-      <div class="pricelist__cell">Стандарт 3,99 USD</div>
-      <div class="pricelist__cell">Анлим 9,99 USD</div>
-    </div>
-    <div class="pricelist__row">
-      <div class="pricelist__cell pricelist__cell_rowheader">Розовый фильтр</div>
-      <div class="pricelist__cell"></div>
-      <div class="pricelist__cell"></div>
-      <div class="pricelist__cell"></div>
-    </div>
-    <div class="pricelist__row">
-      <div class="pricelist__cell pricelist__cell_rowheader">Смайлики</div>
-      <div class="pricelist__cell"></div>
-      <div class="pricelist__cell"></div>
-      <div class="pricelist__cell"></div>
-    </div>
-    <div class="pricelist__row">
-      <div class="pricelist__cell pricelist__cell_rowheader">Комментарии</div>
-      <div class="pricelist__cell"></div>
-      <div class="pricelist__cell"></div>
-      <div class="pricelist__cell"></div>
+    <div class="wrapper">
+      <div class="pricelist__column pricelist__column_filter">
+        <div class="pricelist__cell pricelist__cell_left pricelist__cell_top">Розовый фильтр</div>
+        <div class="pricelist__cell pricelist__cell_left">Смайлики</div>
+        <div class="pricelist__cell pricelist__cell_left">Комментарии</div>
+      </div>
+      <div class="pricelist__column">
+        <div class="pricelist__header">База<br> <span>1,99 usd</span></div>
+        <div class="pricelist__cell pricelist__cell_status_ok">&#10004;</div>
+        <div class="pricelist__cell pricelist__cell_status_not">&#10060;</div>
+        <div class="pricelist__cell pricelist__cell_status_not">&#10060;</div>
+      </div>
+      <div class="pricelist__column">
+        <div class="pricelist__header pricelist__header_marked">Стандарт<br> <span>3,99 usd</span></div>
+        <div class="pricelist__cell pricelist__cell_status_ok">&#10004;</div>
+        <div class="pricelist__cell pricelist__cell_status_ok">&#10004;</div>
+        <div class="pricelist__cell pricelist__cell_status_not">&#10060;</div>
+      </div>
+      <div class="pricelist__column">
+        <div class="pricelist__header pricelist__header_right_none">Анлим<br> <span>9,99 usd</span></div>
+        <div class="pricelist__cell pricelist__cell_status_ok">&#10004;</div>
+        <div class="pricelist__cell pricelist__cell_status_ok">&#10004;</div>
+        <div class="pricelist__cell pricelist__cell_status_ok">&#10004;</div>
+      </div>
     </div>
   </div>
   
   <div class="contacts">
-    <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами</h3>
-    <p class="contacts__contacts">Звоните: <span>8 (800) 1000 900</span></p>
-    <p class="contacts__contacts">Приезжайте в гости:<span>hello@pinkapp.ru</span></p>
-    <p class="contacts__contacts">Пишите: <span>Санкт-Петербург, Невский проспект, д. 20</span></p>
+    <div class="wrapper">
+      <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами</h3>
+      <div class="contacts__connection">
+        
+        <div class="contacts__contact">
+          <h4>Звоните:</h4>
+          <p>8 (800) 1000 900</p>
+        </div>
+          
+        <div class="contacts__contact">
+          <h4>Приезжайте в гости:</h4>
+          <p>Санкт-Петербург, Невский проспект, д. 20</p>
+        </div>
+          
+        <div class="contacts__contact">
+          <h4>Пишите:</h4>
+          <p class="contacts__mail">hello@pinkapp.ru</p>
+        </div>
+          
+      </div>
+    </div>
   </div>
    
   <div class="map"></div>
@@ -122,23 +140,21 @@
   <footer class="page-footer">
    
     <a class="page-footer__logo" href="#">
-      <img src="" alt="pink">
+      <img src="img/Pink-logo-footer-3@1x.png" srcset="img/Pink-logo-footer-3@2x.png 2x" width="146" alt="pink">
     </a>
     
     <div class="social">
-      <a class="social__link" href="#">twitter</a>
-      <a class="social__link" href="#">facebook</a>
-      <a class="social__link" href="#">google</a>
+      <a class="social__link social__link_tw" href="#"><img src="img/twitter.svg" alt="twitter"></a>
+      <a class="social__link social__link_fb" href="#"><img src="img/facebook.svg" alt="facebook"></a>
+      <a class="social__link social__link_goo" href="#"><img src="img/youtube.svg" alt="youtube"></a>
     </div>
     
     <div class="copyright">
-        <div class="copyright__item">Website by</div>
-        <div class="copyright__item">for</div>
+        <a href="#" class="copyright__item copyright__item_design">Website by</a>
+        <a href="#" class="copyright__item copyright__item_for">for</a>
     </div>
     
   </footer>
-    
-  
   
 </body>
 </html>

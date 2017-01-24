@@ -1,25 +1,91 @@
 .pricelist {
-  .wrapper;
-  display: table;
-  border-collapse: collapse;
+  background: @bg-grey;
+  font-size: 0;
+  padding-bottom: 95px;
+  position: relative;
   
-  &__row {
-    display: table-row;
+  &::before {
+    content: '';
+    position: absolute;
+    background: @bg-grey;
+    height: 200px;
+    top: -120px;
+    width: 100%;
+    z-index: -1;
+    transform: skewY(-4deg);
+    
+  }
+  
+  &__column {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25%;
+  }
+  
+  &__header {
+    color: #fff;
+    background: @dark-blue;
+    padding: 19px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 2px solid @border-grey;
+    overflow: hidden;
+    position: relative;
+    
+    &_right_none {
+      border-right: none;
+    }
+    
+    & span {
+      font-size: 24px;
+      font-weight: 300;
+    }
+    
+    &_marked {
+      &::before {
+        content: 'Хит';
+        position: absolute;
+        background: @pink;
+        width: 100px;
+        font-size: 14px;
+        transform: rotate(-45deg);
+        left: -25px;
+        top: 10px;
+      }
+    }
   }
   
   &__cell {
-    display: table-cell;
-    border: 1px #e5e5e5 solid;
-    padding: 15px 0;
-    width: 25%;
+    padding: 15px 24px;
+    color: @dark-blue;
+    border: 2px @border-grey solid;
+    border-top: none;
+    border-left: none;
+    box-sizing: border-box;
+    height: 60px;
+    background: #fff;
     
-    &_empty {
-      border: none;
+    &_top {
+      border-top: 2px @border-grey solid;
+    }
+    &_left {
+      border-left: 2px @border-grey solid;
     }
     
-    &_rowheader {
-      padding: 15px 24px;
-      color: @dark-blue;
+    &_status {
+      &_ok {
+        text-align: center;
+        color: #3dc644;
+        font-size: 30px;
+      }
+      
+      &_not {
+        text-align: center;
+        font-size: 30px;
+      }
+      
     }
   }
 }

@@ -27,13 +27,31 @@
     flex-wrap: wrap;
   }
   
-  &__list li {
-  }
-  
   &__item {
     color: #fff;
     display: block;
     padding: 40px 0;
+    position: relative;
+    
+    &:hover {
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: #fff;
+        height: 2px;
+        left: 0;
+        right: 0;
+        bottom: 32px;
+      }
+    }
+    
+    &:active {
+      opacity: .3;
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 

@@ -1,17 +1,81 @@
 .page-footer {
   .wrapper;
-  .clearfix;
-  
-  &__logo {
-    float: left;
-  }
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  align-items: center;
   
   .social {
-    float: left;
+    display: flex;
+    justify-content: space-around;
+    
+    &__link {
+      font-size: 0;
+      display: block;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 3px solid #e9ebec;
+      margin-right: 12px;
+      position: relative;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      & img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      
+      &:hover {
+        border-color: @dark-blue;
+      }
+      &:active {
+        opacity: .3;
+      }
+    }
   }
   
   .copyright {
-    float: right;
+    
+    &__item {
+      color: @dark-blue;
+      display: inline-block;
+      vertical-align: baseline;
+      padding-right: 50px;
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        right: 5px;
+      }
+      
+      &_design::before {
+        background: url('../img/glukhanko.svg') no-repeat;
+        fill: yellow;
+      }
+      &_for::before {
+        background: url('../img/htmlacademy.svg') no-repeat;
+      }
+      
+      &:hover {
+        color: @pink;
+        text-decoration: underline;
+      }
+      
+      &:active {
+        color: #000;
+        text-decoration: none;
+        opacity: .3;
+      }
+    }
   }
-  
 }

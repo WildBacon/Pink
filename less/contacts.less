@@ -1,3 +1,54 @@
 .contacts {
-  .wrapper;
+  position: relative;
+  
+  &__title {
+    font-size: 50px;
+    line-height: 70px;
+    color: @dark-blue;
+    font-weight: 300;
+    width: 480px;
+    margin: 65px auto 55px;
+  }
+  
+  &__connection {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  &__contact {
+    width: 24%;
+    font-weight: 700;
+    text-align: center;
+    
+    & h4 {
+      margin-bottom: 20px;
+    }
+    
+    & p {
+      color: @pink;
+      font-weight: 500;
+    }
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -125px;
+    border-top: 125px #fff solid;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+  }
+  
+  &__mail {
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+    &:active {
+      opacity: .3;
+      text-decoration: none;
+    }
+  }
 }
