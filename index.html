@@ -11,9 +11,10 @@
   
   <header class="page-header">
     <div class="page-header__container">
-      <a class="page-header__logo" href="index.html"><picture>
-        <img src="img/Pink-logo-3@1x.png" srcset="img/Pink-logo-3@2x.png 2x" width="146" alt="Pink"></picture>
-      </a>
+      <div class="page-header__link-wrap">
+        <a class="page-header__logo" href="index.html"></a>
+        <i class="page-header__menu-button page-header__menu-button_close"></i>
+      </div>
       <ul class="page-header__list">
         <li><a href="#" class="page-header__item">Информация</a></li>
         <li><a href="#" class="page-header__item">Возможности</a></li>
@@ -36,15 +37,12 @@
         </div>
         <p class="application__info">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
       </div>
-      <div class="welcome-block__hand">
-      <img src="img/iphone-hand-3@1x.png" srcset="img/iphone-hand-3@2x.png 2x" alt="hand">
-      </div>
     </div>
   </section>
   
   <section class="promo">
    
-    <h2 class="promo__title">Устали от серости мегаполиса? Нам есть, что вам <br>предложить!</h2>
+    <h2 class="promo__title">Устали от серости мегаполиса? <br>Нам есть, что вам <br>предложить!</h2>
     
     
     <div class="demonstration">
@@ -61,27 +59,33 @@
       <div class="demonstration__item">
         <div class="demonstration__display"><img src="img/iphone-screen-3-3@1x.png" srcset="img/iphone-screen-3-3@2x.png 2x" alt=""></div>
         <h4 class="demonstration__title">Заводит новых друзей</h4>
-        <p class="demonstration__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <p class="demonstration__description demonstration__description_last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
     </div>
-    
-    <div class="effect">
-      <div class="effect__clock"><img src="img/clock.svg" alt="clock" width=350></div>
+  </section>
+  
+  <section class="effect">
+    <div class="effect__container">
       <h4 class="effect__title">Эффект на 24 часа!</h4>
       <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
       <a href="#" class="effect__more">Узнать больше об исследовании</a>
     </div>
-    
-    
   </section>
    
-  <article class="feedback">
-    <a class="feedback__arrow feedback__arrow_left" href='#'></a>
-    <p class="feedback__message">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-    <a class="feedback__arrow feedback__arrow_right" href='#'></a>
-    <p class="feedback__name">Николай Петров</p>
-    <p class="feedback__user-info">25 лет, водитель трамвая</p>
-  </article>
+  <section class="feedback">
+    <article class="feedback-item">
+      <a class="feedback__arrow feedback__arrow_left" href='#'></a>
+      <p class="feedback__message">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      <a class="feedback__arrow feedback__arrow_right" href='#'></a>
+      <p class="feedback__name">Николай Петров</p>
+      <p class="feedback__user-info">25 лет, водитель трамвая</p>
+    </article>
+    <div class="feedback__control">
+      <i class="feedback__controller feedback__controller_active"></i>
+      <i class="feedback__controller"></i>
+      <i class="feedback__controller"></i>
+    </div>
+  </section>
   
   <div class="pricelist">
     <div class="wrapper">
@@ -126,7 +130,7 @@
           <p>Санкт-Петербург, Невский проспект, д. 20</p>
         </div>
           
-        <div class="contacts__contact">
+        <div class="contacts__contact contacts__contact_last">
           <h4>Пишите:</h4>
           <p class="contacts__mail">hello@pinkapp.ru</p>
         </div>
@@ -139,9 +143,7 @@
   
   <footer class="page-footer">
    
-    <a class="page-footer__logo" href="#">
-      <img src="img/Pink-logo-footer-3@1x.png" srcset="img/Pink-logo-footer-3@2x.png 2x" width="146" alt="pink">
-    </a>
+    <a class="page-footer__logo" href="#"></a>
     
     <div class="social">
       <a class="social__link social__link_tw" href="#"><img src="img/twitter.svg" alt="twitter"></a>

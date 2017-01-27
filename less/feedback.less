@@ -6,14 +6,18 @@
   position: relative;
   margin-bottom: 190px;
   
+  @media (max-width: 1200px) {
+    padding: 75px 0 70px;
+    margin-bottom: 90px;
+  }
+  
   &__message {
     color: @dark-blue;
     margin: auto;
     margin-bottom: 35px;
     width: 690px;
     position: relative;
-    
-    
+
     &::before {
       content: '“';
       font-family: 'Georgia', sans-serif;
@@ -25,15 +29,29 @@
       left: 0;
       right: 0;
       z-index: 100;
+      
+      @media (max-width: 1200px) {
+        display: none;
+      }
     }
   }
   
   &__name {
     font-size: 24px;
     font-weight: 700;
+    
+    @media (max-width: 1200px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   
   &__user-info {
+    
+    @media (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
   
   &__arrow {
@@ -65,6 +83,41 @@
       right: 0;
       transform: rotate(135deg);
     }
+    
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
   
+  &__control {
+    position: absolute;
+    bottom: 21px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__controller {
+    display: none;
+    
+    @media (max-width: 1200px) {
+      width: 6px;
+      height: 6px;
+      background: #bec2c7;
+      display: block;
+      border-radius: 50%;
+      margin: 3px;
+      margin-right: 13px;
+      cursor: pointer;
+    }
+    
+    &_active {
+      background: #fff;
+      border: 3px solid @dark-blue;
+      margin: 0;
+      margin-right: 13px;
+    }
+  }
 }

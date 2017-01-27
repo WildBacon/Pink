@@ -1,0 +1,59 @@
+.effect {
+  background: @bg-grey;
+  
+  @media (max-width:1200px) {
+    background: #fff;
+  }
+  
+  &__container {
+    .wrapper;
+    line-height: 30px;
+    padding: 100px 0 120px 380px;
+    background: url(../img/clock.svg) no-repeat;
+    background-position: bottom left;
+    background-size: 300px;
+    box-sizing: border-box;
+    min-height: 350px;
+  
+    @media (max-width:1200px) {
+      padding-left: 45%;
+      padding-top: 100px;
+      background-size: 260px;
+    }
+  }
+  
+  &__title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    
+    @media (max-width:1200px) {
+      margin-bottom: 15px;
+    }
+  }
+  
+  &__text {
+    margin-bottom: 35px;
+    
+    @media (max-width:1200px) {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  &__more {
+    color: @pink;
+    text-decoration: underline;
+    
+    @media (max-width:1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    
+    &:hover {
+      color: darken(@pink, 20%);
+      text-decoration: none;
+    }
+  }
+}
+

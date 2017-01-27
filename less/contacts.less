@@ -6,13 +6,24 @@
     line-height: 70px;
     color: @dark-blue;
     font-weight: 300;
-    width: 480px;
+    width: 50%; 
+    text-align: center;
     margin: 65px auto 55px;
+    
+    @media (max-width: 1200px) {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 50px auto 45px;
+    }
   }
   
   &__connection {
     display: flex;
     justify-content: space-around;
+    
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
   }
   
   &__contact {
@@ -20,8 +31,23 @@
     font-weight: 700;
     text-align: center;
     
+    @media (max-width: 1200px) {
+      width: 35%;
+      margin-bottom: 45px;
+    }
+    
+    &_last {
+      @media (max-width: 1200px) {
+        margin-bottom: 15px;
+      }
+    }
+    
     & h4 {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      
+      @media (max-width: 1200px) { 
+        margin-bottom: 5px;
+      }
     }
     
     & p {
