@@ -1,8 +1,12 @@
 .effect {
   background: @bg-grey;
   
-  @media (max-width:1200px) {
+  @media (max-width: 1200px) {
     background: #fff;
+  }
+  
+  @media (max-width: 700px) {
+    display: none;
   }
   
   &__container {
@@ -10,15 +14,17 @@
     line-height: 30px;
     padding: 100px 0 120px 380px;
     background: url(../img/clock.svg) no-repeat;
-    background-position: bottom left;
+    background-position: 60px left;
     background-size: 300px;
     box-sizing: border-box;
-    min-height: 350px;
+    min-height: 430px;
   
     @media (max-width:1200px) {
+      min-height: 350px;
       padding-left: 45%;
       padding-top: 100px;
       background-size: 260px;
+      background-position: bottom left;
     }
   }
   
