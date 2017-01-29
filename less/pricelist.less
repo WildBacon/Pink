@@ -4,6 +4,14 @@
   padding-bottom: 70px;
   position: relative;
   
+  @media (max-width: 700px) {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 100px;
+    padding-top: 60px;
+  }
+
+  
   &::before {
     content: '';
     position: absolute;
@@ -13,7 +21,6 @@
     width: 100%;
     z-index: -1;
     transform: skewY(-4deg);
-    
   }
   
   &__column {
@@ -21,6 +28,25 @@
     display: inline-block;
     vertical-align: bottom;
     width: 25%;
+    
+    @media (max-width: 700px) {
+      width: 100%;
+      position: relative;
+      left: -200%;
+    }
+  }
+  
+  &__mobile-text {
+    display: none;
+    
+    @media (max-width: 700px) {
+      display: block;
+      position: absolute;
+      font-size: 14px;
+      line-height: 24px;
+      color: @dark-blue;
+      text-transform: uppercase;
+    }
   }
   
   &__header {
@@ -83,6 +109,16 @@
       padding: 7.5px 15px;
     }
     
+    @media (max-width: 700px) {
+      text-align: right;
+    }
+    
+    &_option {
+      @media (max-width: 700px) {
+      display: none;
+    }
+  }
+    
     &_top {
       border-top: 2px @border-grey solid;
     }
@@ -95,13 +131,53 @@
         text-align: center;
         color: #3dc644;
         font-size: 30px;
+        
+        @media (max-width: 700px) {
+          text-align: right;
+        }
       }
       
       &_not {
         text-align: center;
         font-size: 30px;
+        
+        @media (max-width: 700px) {
+          text-align: right;
+        }
       }
       
+    }
+  }
+  
+  &__control {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__controller {
+    display: none;
+    
+    @media (max-width: 1200px) {
+      width: 6px;
+      height: 6px;
+      background: #bec2c7;
+      display: block;
+      border-radius: 50%;
+      margin: 3px;
+      margin-right: 13px;
+      cursor: pointer;
+    }
+    
+    &_active {
+      background: #fff;
+      border: 3px solid @dark-blue;
+      margin: 0;
+      margin-right: 13px;
     }
   }
 }
