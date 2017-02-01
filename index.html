@@ -10,12 +10,12 @@
 <body>
   
   <header class="page-header">
-    <div class="page-header__container">
-      <div class="page-header__link-wrap">
+    <div class="page-header__container" >
+      <div class="page-header__link-wrap" id="header-wrap">
         <a class="page-header__logo" href="index.html"></a>
-        <i class="page-header__menu-button page-header__menu-button_close"></i>
+        <i class="page-header__menu-button page-header__menu-button_burger" id="header-button"></i>
       </div>
-      <ul class="page-header__list">
+      <ul class="page-header__list" id="header-list">
         <li><a href="#" class="page-header__item">Информация</a></li>
         <li><a href="#" class="page-header__item">Возможности</a></li>
         <li><a href="#" class="page-header__item">Отзывы</a></li>
@@ -141,7 +141,7 @@
     </div>
   </div>
    
-  <div class="map"></div>
+  <div class="map" id="map-canvas"></div>
   
   <footer class="page-footer">
    
@@ -160,7 +160,7 @@
     
   </footer>
   <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/application.js"></script>
   <script src="js/main.js"></script>
+  <script src="map.js"></script>
 </body>
 </html>
